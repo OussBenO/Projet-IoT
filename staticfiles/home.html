@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <style>
+         {% load static %}
+        body {
+            background-image: url("{% static 'images\1_Blog_Featured_Image-scaled-1.jpg' %}");
+            background-size: cover;
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+            height: 50vh;
+        }
+
+        .content {
+            text-align: center;
+
+        }
+
+        h1 {
+            color: white;
+            margin-top: 0;
+            background-color: rgba(0, 0, 0, 0); /* Semi-transparent black background */
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {color: white;
+            margin: 20px auto;
+            width: 80%;
+            font-size: 1.2em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        ul {
+            position: relative;
+            top: 100px;
+            left: 500px;
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        ul li a:hover {
+            background-color: darkgreen;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Bienvenue sur la page d'accueil</h1>
+        <p>
+            Bienvenue sur notre site dédié à l'Internet des objets (IoT) ! Ici, vous pouvez afficher les données de température et d'humidité en temps réel sous forme de tableaux et de graphiques, ainsi que consulter les données JSON. Utilisez le bouton ci-dessous pour accéder aux différentes pages.
+        </p>
+        <ul>
+            <li><a href="{% url 'table' %}">application</a></li>
+
+        </ul>
+    </div>
+</body>
+</html>

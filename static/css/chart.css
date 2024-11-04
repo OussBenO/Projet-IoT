@@ -1,0 +1,60 @@
+
+.graphique{
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 100%;
+    height: 1200px;
+
+  
+}
+.graphique-temp{
+    position: relative;
+    left: 25%;
+    width: 60%; height: 50%;
+
+}
+.graphique-hum{
+    position: relative;
+    top: 2%;
+    left: 25%;
+    width: 60%; height: 50%;
+
+}
+.navb {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 20%;
+    height: 20%;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navb button {
+    display: block;
+    text-decoration: none;
+    color: red;
+    width: 90%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navb button:hover {
+    background-color: #999;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
